@@ -1,0 +1,83 @@
+.defaultPage {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+.defaultPage img {
+  position: absolute;
+  width: 25%;
+}
+.defaultPage #left {
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+.defaultPage #right {
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.primaryBtn {
+  background-color: #4d5b9e;
+  font-weight: 500;
+  color: #f5f7fb;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  display: grid;
+  /* max-width: 7.5rem; */
+  place-content: center;
+  text-decoration: none;
+}
+.primaryBtn:hover,
+.finishBtn:hover {
+  background-color: #3f4a85; /* Slightly darker shade for hover */
+}
+
+.primaryBtn:active,
+.finishBtn:active {
+  background-color: #354274; /* Even darker shade for active state */
+  transform: scale(0.98); /* Subtle shrink to indicate button press */
+}
+
+.chip {
+  padding: 5px 16px;
+  font-weight: 500;
+  font-size: 0.625rem;
+  border: 1px solid #4d5b9e;
+  border-radius: 0.5rem;
+  color: #293264;
+}
+.chip__selected {
+  background-color: #d6dbf5;
+  border-color: #d6dbf5;
+}
+
+.chip__incorrect {
+  background-color: #f8bcbc;
+  border-color: #f8bcbc;
+  color: #293264;
+}
+.chip__correct {
+  background-color: #94d7a2;
+  border-color: #94d7a2;
+  color: #293264;
+}
+
+.form-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-controls input,
+.form-controls select {
+  background-color: #d6dbf5;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
